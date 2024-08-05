@@ -8,6 +8,7 @@
     --color-link: rgba(0, 14, 1, 1);
     --text-white: rgba(255, 255, 255, 1);
     --color-title: rgba(121, 172, 120, 1);
+    --color-active: rgba(121, 172, 120, 1);
     --font-size-default: 10px;
 }
 
@@ -28,3 +29,63 @@ body {
     overflow-x: hidden;
     background: #fff;
 }
+
+nav {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-link);
+    font-weight: 400;
+    font-family: var(--font-Ibm);
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:nth-child(2) a {
+    color: var(--color-active);
+    border-bottom: .3rem solid var(--color-active);
+    padding-bottom: .4rem;
+}
+
+nav ul li:nth-child(2) a:hover {
+    text-decoration: none;
+}
+
+nav .btn button {
+    font-weight: 700;
+    font-family: var(--font-inter);
+    background: var(--prymary-color);
+    font-size: 2rem;
+    border-radius: 4rem;
+    padding: 1.5rem 2.5rem;
+    color: var(--text-white);
+    transition: all .30s ease-in-out;
+}
+
+nav .btn button:hover {
+    transform: scale(1.1) rotate(3deg);
+    background: var(--text-white);
+    color: var(--prymary-color);
+    box-shadow: 0 0 1rem .5rem var(--prymary-color);
+}
+
+nav .btn button:active {
+    transform: scale(.9) ;
+}
+
