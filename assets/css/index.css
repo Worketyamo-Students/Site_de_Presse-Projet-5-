@@ -58,6 +58,10 @@ nav ul a:hover {
     text-decoration: underline;
 }
 
+nav ul li:nth-child(1)  {
+    display: none;
+}
+
 nav ul li:nth-child(3) a {
     color: var(--color-active);
     border-bottom: .3rem solid var(--color-active);
@@ -140,17 +144,19 @@ ion-icon:nth-child(1) {
         font-weight: 600;
     }
 
-    nav li:nth-child(1) {
+    nav ul li:nth-child(1) {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         padding-right: 2rem;
         margin-bottom: 0;
-    }
+    } 
 
     nav ul li {
         margin-bottom: 3rem;
     }
+
+    
 
     nav .btn {
         display: none;
