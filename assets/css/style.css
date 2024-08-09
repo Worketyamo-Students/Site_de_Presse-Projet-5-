@@ -175,3 +175,110 @@ ion-icon:nth-child(1) {
     }
 }
 
+/* Section 1 */
+
+.section-one {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 5rem;
+}
+
+.article-img {
+    flex: 3;
+}
+
+.article-img > .img-description {
+    position: relative;
+    top: 60%;
+    left: 10%;
+    color: var(--text-white);
+    padding: 0 2rem;
+    font-family: var(--font-Ibm);
+}
+
+.article-img > .img-description > h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.article-img > .img-description > p {
+    font-size: 1.5rem;
+}
+
+.article-img > img {
+    border-radius: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+.article-list {
+    flex: 2;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-Ibm);
+}
+
+.article-list .a-la-une {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    border-left: .7rem solid var(--prymary-color);
+    padding-left: 1rem;
+}
+
+.article-list > span {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.article-list > span > img {
+    flex: 2;
+}
+
+.article-list > span > .p {
+    flex: 2;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.article-list > span > .p > h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.article-list > span > .p > p{
+    font-size: 1.5rem;
+}
+
+.section-two {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.section-two > .photo {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two > .photo > p {
+    font-size: 1rem;
+    color: var(--prymary-color);
+    margin-top: 2rem;
+}
+
+.section-two > .photo > h4 {
+    font-size: 2rem;
+    color: var(--color-link);
+}
+
+.photo > img {
+    width: 300px;
+    height: auto;
+}
